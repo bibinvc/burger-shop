@@ -324,32 +324,15 @@ h1 {
 }
 
 /* Add styling for the hamburger icon */
-.hamburger-icon {
+/* .hamburger-icon {
     display: none;
     cursor: pointer;
     font-size: 1.5em;
     margin-right: 10px;
-}
+} */
 
 /* Media query for mobile responsiveness */
-@media only screen and (max-width: 600px) {
-    /* Hide the regular navigation menu on small screens */
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        top: 60px; /* Adjust the top position as needed */
-        right: 0;
-        width: 100%;
-        background-color: #fff; /* Background color for the menu */
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
 
-    /* Show the hamburger icon */
-    .hamburger-icon {
-        display: block;
-    }
 
     /* Style the individual items in the mobile menu */
     .nav-list li {
@@ -358,7 +341,6 @@ h1 {
         border-bottom: 1px solid #ddd; /* Border between menu items */
         width: 100%;
     }
-}
 
 /* ... (previous styles) ... */
 
