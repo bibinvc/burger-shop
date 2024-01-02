@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bun Burger</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" alt="Bun Burger Logo" class="logo" />
+        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>            
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="offer.html">Special Offers</a></li>
+        </ul>
+    </nav>
+
+    <div class="cover-image"></div>
+
+    <div id="app">
+        <h1>Bun Burger</h1>
+        <div id="productContainer"></div>
+        <div id="selectedItems" class="selected-items-box"></div>
+        <div id="totalPrice" class="total-price-box">Total: 0.00</div> 
+        <div class="order-now-button-box">
+            <button onclick="placeOrder()" class="order-now-button">Order Now</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

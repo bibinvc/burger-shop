@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8d01c; /* Yellow background color */
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cover-image {
+    height: 300px;
+    background-image: url('https://s3-alpha.figma.com/hub/file/2681607913/375e60a1-ef4f-48a4-839b-fb48be4f0c87-cover.png'); /* Replace with your actual burger image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Light gray transparent background color */
+    color: #333; /* Dark text color */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Set a high z-index to ensure it appears on top of other elements */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align the menu items to the right */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    max-width: 50px; /* Adjust the max-width as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 30px; /* Adjust the max-width for mobile */
+        margin-right: 5px; /* Adjust the margin for mobile */
+    }
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    color: white;
+}
+
+.selected-items-box,
+.total-price-box {
+    background-color: #f8d01c;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.total-price-box {
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.order-now-button-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.order-now-button:hover {
+    background-color: #045049; /* Darker shade for hover */
+}
+
+.order-now-button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin between product items */
+    border-bottom: 1px solid #ddd;
+}
+
+.product span {
+    flex: 2;
+    text-align: left;
+    /* Align item name to the left */
+}
+
+.product span.item-price {
+    flex: 1;
+    text-align: center;
+    /* padding-right: 5%; */
+    /* Align item price to the right */
+}
+
+.product .quantity {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    /* Align quantity-related elements to the right */
+}
+
+.product .quantity button,
+.product .quantity .quantity-input {
+    margin-left: 5px;
+}
+
+
+.product input.quantity-input {
+    width: 30px; /* Adjust width for better appearance */
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product select,
+.quantity-input {
+    margin-top: 5px;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+    .cover-image {
+        height: 150px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    #app {
+        margin: 10px;
+    }
+
+    .product {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    nav ul {
+        text-align: right;
+    }
+
+    #app {
+        margin: 50px;
+    }
+
+    .product {
+        display: inline-block;
+    }
+}
+
+.category {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the category content horizontally */
+    text-align: center;
+    /* Center the category content text */
+}
+
+.category h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.category-image {
+    width: 250px;
+    /* Set the initial width to 100% */
+    height: 200px;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Add a media query for larger screens (adjust the breakpoint as needed) */
+@media (min-width: 768px) {
+    .category {
+        flex-direction: column;
+        /* Change to horizontal layout for larger screens */
+    }
+
+    .category-image {
+        width: 150px;
+        /* Adjust the width for larger screens */
+    }
+}
+
+/* Add any additional styling as needed */
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button,
+.qbutton {
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 7px 10px;
+    text-align: center;
+    border: none;
+    margin-top: 5px;
+}
+
+
+.quantity-input {
+    width: 24px;
+    height: 28px;
+    text-align: center;
+    border: none;
+
+}
+
+#totalPrice {
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 500;
+}
+
+/* ... (previous styles) ... */
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .product {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Change to column layout for mobile screens */
+    }
+
+    .product span,
+    .product span.item-price,
+    .product .quantity {
+        flex: 1;
+        text-align: left;
+        /* Align each section to the left for mobile screens */
+    }
+
+    .product .quantity {
+        margin-top: 5px;
+        justify-content: flex-end;
+        /* Align quantity-related elements to the right */
+    }
+
+    .product .quantity button,
+    .product .quantity .quantity-input {
+        margin-left: 5px;
+    }
+}
+
+/* Add a class to hide the navigation menu by default on small screens */
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* Add styling for the hamburger icon */
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    /* Hide the regular navigation menu on small screens */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        right: 0;
+        width: 100%;
+        background-color: #fff; /* Background color for the menu */
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    /* Show the hamburger icon */
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Style the individual items in the mobile menu */
+    .nav-list li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Border between menu items */
+        width: 100%;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Additional styles for the contact page */
+.contact-info,
+.location-map,
+.opening-hours {
+    margin-top: 20px;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* ... (previous styles) ... */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 16px;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
