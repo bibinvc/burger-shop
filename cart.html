@@ -13,16 +13,17 @@
     <title>Cart - Bun Burger</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar-container">
         <img src="images/logo.png" alt="Bun Burger Logo" class="logo" />
         <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
-
+        <div class="nav-wrapper">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>            
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="offer.html">Special Offers</a></li>
         </ul>
+    </div>
     </nav>
     <h1>Cart</h1>
 
@@ -49,6 +50,12 @@
      <button onclick="sendToWhatsapp()">Buy Now</button>
 
     <script src="cart.js"></script>
+    <script>
+        function goBack() {
+            // Navigate back to the previous page
+            window.history.back();
+        }
+    </script>
 
    
     

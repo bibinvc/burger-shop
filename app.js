@@ -89,7 +89,6 @@ function renderMenu() {
       productDiv.appendChild(minusButton);
       productDiv.appendChild(quantityInput);
       productDiv.appendChild(plusButton);
-
       categoryDiv.appendChild(productDiv);
     });
 
@@ -182,10 +181,10 @@ function placeOrder() {
 }
 
 function toggleMenu() {
-  // Toggle the 'active' class on the navigation menu
-  const navList = document.querySelector('.nav-list');
-  navList.classList.toggle('active');
+  const navWrapper = document.querySelector('.nav-wrapper');
+  navWrapper.classList.toggle('active');
 }
+
 
 
 
