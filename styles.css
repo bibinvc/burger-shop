@@ -65,10 +65,10 @@ nav a:hover {
 }
 
 #app {
-    max-width: 800px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,6 +83,8 @@ button {
 }
 
 h1 {
+    text-align: center;
+
     color: white;
 }
 
@@ -125,7 +127,10 @@ h1 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .product {
+    border-collapse: collapse;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
