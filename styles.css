@@ -376,4 +376,37 @@ h1 {
 }
 
 
+/* Add styles for the footer */
+footer {
+    background-color: #302f2f; /* Updated to black */
+    color: #d4d4d498;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #d4d4d498;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
 
