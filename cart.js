@@ -34,38 +34,42 @@ function displayTotalAmount() {
 }
 
 function sendToWhatsapp() {
-    const number = "+919744622185";
-
     const name = document.getElementById('name').value;
     const address = document.getElementById('address').value;
     const contact = document.getElementById('contact').value;
+
+    // Check if name, address, and contact are provided
+    if (!name || !address || !contact) {
+        alert("Name, Address, and Contact are required.");
+        return;
+    }
+
+    // Check if the contact number is exactly 10 digits
+    if (!/^\d{10}$/.test(contact)) {
+        alert("Contact number must be a 10-digit number.");
+        return;
+    }
+
+    const number = "+919744622185";
     const comment = document.getElementById('comment').value;
     const storedSelectedItems = JSON.parse(localStorage.getItem("selectedItems")) || {};
     const storedTotalAmount = localStorage.getItem("totalAmount") || "0.00";
-    
+
     // Convert the object to a formatted string
     const selectedItemsString = Object.entries(storedSelectedItems)
         .map(([itemName, item]) => ` ${itemName} X ${item.quantity} - ${item.total.toFixed(2)}`)
         .join("%0a");
 
+    const url = "https://wa.me/" + number + "?text=" +
+        "Name : " + name + "%0a" +
+        "Address : " + address + "%0a" +
+        "Contact : " + contact + "%0a" +
+        "Comment : " + comment + "%0a" +
+        "Items : " + selectedItemsString + "%0a" +
+        "Total : " + storedTotalAmount + "%0a";
 
-    const url = "https://wa.me/" + number + "?text="
-    + "Name : " +name+ "%0a"
-	+ "Address : " +address+ "%0a"
-	+ "Contact : " +contact+ "%0a"
-    + "Comment : " +comment+ "%0a"
-	+ "Items : " +selectedItemsString+ "%0a"
-	+ "Total : " +storedTotalAmount+ "%0a"
-
-	window.open(url, '_blank').focus();
+    window.open(url, '_blank').focus();
 }
-
-function toggleMenu() {
-    const navWrapper = document.querySelector('.nav-wrapper');
-    navWrapper.classList.toggle('active');
-  }
-
-
 
 
 //     // Retrieve user information from the input fields

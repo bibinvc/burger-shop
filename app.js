@@ -329,6 +329,11 @@ window.onload = () => {
 
 
 function placeOrder() {
+  // Check if at least one item is selected
+  if (Object.keys(selectedItems).length === 0) {
+    alert("Please select at least one item before placing an order.");
+    return;
+}
     // Redirect to the cart page
     window.location.href = "cart.html";
 
