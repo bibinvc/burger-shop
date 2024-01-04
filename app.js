@@ -25,7 +25,8 @@ const menu = [
     items: [
       { name: 'French Fries Small ', price: 60},
       {name: 'French Fries Medium ', price: 110},
-      { name: 'French Fries peri peri S/M', price: 70/120 },
+      { name: 'French Fries peri peri S', price: 70 },
+      { name: 'French Fries peri peri M', price:120 },
       {name: 'Dynamite Fries', price:130 },
       {name: 'Loaded Cheesy Fries', price:130 },
       {name: 'Loaded Chicken Fries', price:140 },
@@ -133,10 +134,10 @@ const menu = [
     category: 'MEALS COMBO',
     image: 'chicken burger combo.jpg',
     items: [
-      { name: 'Chicken Burger ,Fries and Softdrinks', price: 120},
-      { name: 'Beef Burger fries With Softdrinks', price: 120},
-      { name: 'Crispy Wrap Combo', price: 140},
-      { name: 'Kids Meals with fries and juice', price:120 },
+      { name: 'Chicken Burger,Fries,Softdrinks', price: 120},
+      { name: 'Beef Burger,fries,Softdrinks', price: 120},
+      { name: 'Crispy Wrap', price: 140},
+      { name: 'Kids Meals,fries,juice', price:120 },
       // Add more side items as needed
       // ...
     ],

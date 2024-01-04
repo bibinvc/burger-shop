@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, 'sans-serif';
     margin: 0;
     padding: 0;
     background-color: #f3f2f2; /* Yellow background color */
@@ -20,12 +20,12 @@ body {
   .tagline {
     font-family:Cambria, Cochin, Georgia, 'Times', Times New Roman, serif;
     position: absolute;
-    top: 90%;
+    top: 80%;
     right: 0; /* Adjust as needed */
     transform: translateY(-50%);
     text-align: right;
     color: rgb(78, 59, 50);;
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px; /* Add padding for better visibility */
   }
   
