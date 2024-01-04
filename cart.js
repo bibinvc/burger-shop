@@ -71,6 +71,11 @@ function sendToWhatsapp() {
     window.open(url, '_blank').focus();
 }
 
+function toggleMenu() {
+    const navWrapper = document.querySelector('.nav-wrapper');
+    navWrapper.classList.toggle('active');
+  }
+
 
 //     // Retrieve user information from the input fields
 //     const name = document.getElementById("name").value;
