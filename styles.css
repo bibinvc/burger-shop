@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Yellow background color */
+    background-color: #f3f2f2; /* Yellow background color */
     color: rgb(78, 59, 50);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -133,7 +133,7 @@ h1 {
 
 .selected-items-box,
 .total-price-box {
-    background-color: #f8d01c;
+    background-color: #f5e6dc;
     margin-top: 20px;
     padding: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -154,12 +154,12 @@ h1 {
 }
 
 .order-now-button:hover {
-    background-color: #045049; /* Darker shade for hover */
+    background-color: rgb(105, 105, 105); /* Darker shade for hover */
 }
 
 .order-now-button {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #f5e6dc;
+    color: rgb(78, 59, 50);;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
