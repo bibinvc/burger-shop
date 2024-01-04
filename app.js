@@ -154,7 +154,7 @@ const menu = [
   },
   {
     category: 'Soft Drinks',
-    image: 'pizza.jpg',
+    image: 'softdrinks.jpeg',
     items: [
       { name: 'Pepsi Can', price:35 },
       { name: '7up can', price:35 },
