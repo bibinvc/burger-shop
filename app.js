@@ -3,7 +3,7 @@
 const menu = [
   {
     category: 'STARTERS',
-    image: 'burgers-category.jpg',
+    image: 'Falafel.jpg',
     items: [
       { name: 'Cheese samoosa 6 pcs', price: 90 },
       { name: 'Felafil Starter 6 pcs', price: 80 },
@@ -21,7 +21,7 @@ const menu = [
   },
   {
     category: 'FRIES',
-    image: 'French-fries.jpg',
+    image: 'Loaded Chicken Fries.jpeg.jpg',
     items: [
       { name: 'French Fries Small ', price: 60},
       {name: 'French Fries Medium ', price: 110},
@@ -36,7 +36,7 @@ const menu = [
   },
   {
     category: 'Healthy Salads',
-    image: 'French-fries.jpg',
+    image: 'Caesar Chicken Salad.jpg',
     items: [
       { name: 'Ceasar Salad Veg', price: 120},
       { name: 'Ceasar Salad Chicken', price:150 },
@@ -48,7 +48,7 @@ const menu = [
   },
   {
     category: 'Normal Burger',
-    image: 'French-fries.jpg',
+    image: 'Supreme Fried Burger.jpg',
     items: [
       { name: 'Chicken Burger', price: 90},
       { name: 'Chicken Cheese burger', price: 100},
@@ -65,7 +65,7 @@ const menu = [
   },
   {
     category: 'LOAF SANDWICH',
-    image: 'French-fries.jpg',
+    image: 'Chicken NUggets  sandwich.jpg',
     items: [
       { name: 'Chicken Sandwich', price: 90},
       { name: 'Chicken steak Sandwich', price: 140},
@@ -79,7 +79,7 @@ const menu = [
   },
   {
     category: 'WRAP ROLLS',
-    image: 'French-fries.jpg',
+    image: 'Supreme Fried Burger.jpg',
     items: [
       { name: 'Chicken tawa roll', price:110 },
       { name: 'Spicy Chicken wraps ', price:120 },
@@ -90,7 +90,7 @@ const menu = [
   },
   {
     category: 'CLUB SANDWICHES',
-    image: 'French-fries.jpg',
+    image: 'Bun Burg Club Sandwich.jpeg.jpg',
     items: [
       { name: 'Bun Burg Club Sandwiches', price: 180},
       // Add more side items as needed
@@ -111,7 +111,7 @@ const menu = [
   },
   {
     category: 'BUN BURG TREATS',
-    image: 'French-fries.jpg',
+    image: 'Mushroom beef burger.jpg',
     items: [
       { name: 'Felafil burger', price: 110},
       // Add more side items as needed
