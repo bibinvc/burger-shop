@@ -12,7 +12,7 @@ body {
     width: auto;
     height: 800px; /* Adjust the height as needed */
     /* background-image: url('https://s3-alpha.figma.com/hub/file/2681607913/375e60a1-ef4f-48a4-839b-fb48be4f0c87-cover.png'); */
-    background-image: url('images/logo.png');
+    background-image: url('images/logo-removebg.png');
     background-size: cover;
     background-position: center;
   }
@@ -88,22 +88,23 @@ nav a:hover {
     }
 
     .logo {
-        max-width: 30px; /* Adjust the max-width for mobile */
+        max-width: 50px; /* Adjust the max-width for mobile */
         margin-right: 5px; /* Adjust the margin for mobile */
     }
 }
 
 
 .logo {
-    max-width: 50px; /* Adjust the max-width as needed */
+    width: 50px; /* Adjust the max-width as needed */
     margin-right: 10px; /* Adjust the margin as needed */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 600px) {
     .logo {
-        max-width: 30px; /* Adjust the max-width for mobile */
+        width: 100%; /* Adjust the max-width for mobile */
+        height: 100%; /* Adjust the max-width for mobile */
         margin-right: 5px; /* Adjust the margin for mobile */
     }
 }
