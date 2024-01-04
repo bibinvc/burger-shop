@@ -153,12 +153,16 @@ const menu = [
     ],
   },
   {
-    category: 'PIZZA',
+    category: 'Soft Drinks',
     image: 'pizza.jpg',
     items: [
-      { name: 'Mini Pizza', price:0 },
-      { name: 'Fusion Chicken Pizza', price:0 },
-      { name: 'B b q Chicken Pizza', price: 0},
+      { name: 'Pepsi Can', price:35 },
+      { name: '7up can', price:35 },
+      { name: 'Dew can', price: 35},
+      { name: 'Red bull', price: 125},
+      { name: 'Predator ', price: 50},
+      { name: 'Small water', price: 10},
+      { name: 'Big water', price: 20},
       // Add more side items as needed
       // ...
     ],

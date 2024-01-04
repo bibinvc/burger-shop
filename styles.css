@@ -356,13 +356,34 @@ h1 {
 }
 
 /* Add styling for the hamburger icon */
+/* Hamburger icon styles */
 .hamburger-icon {
     display: none;
     cursor: pointer;
     font-size: 1.5em;
     margin-right: 30px;
+  }
 
-}
+  .hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333; /* Dark text color */
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger-icon.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-icon.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 
 /* Add a media query for mobile responsiveness */
 @media only screen and (max-width: 600px) {
@@ -496,5 +517,6 @@ footer {
     /* Styles for +/- buttons */
     margin: 5px 0 0 0; /* Adjust as needed */
   }
+  
   
   
