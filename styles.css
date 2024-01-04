@@ -18,8 +18,9 @@ body {
   }
   
   .tagline {
+    font-family:Cambria, Cochin, Georgia, 'Times', Times New Roman, serif;
     position: absolute;
-    top: 50%;
+    top: 90%;
     right: 0; /* Adjust as needed */
     transform: translateY(-50%);
     text-align: right;
