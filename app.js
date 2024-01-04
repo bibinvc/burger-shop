@@ -256,7 +256,7 @@ function updateTotalPrice(priceChange, quantity, itemName, itemPrice) {
   currentTotal = isNaN(currentTotal) ? 0 : currentTotal;
   const newTotal = currentTotal + priceChange;
 
-  totalPriceElement.textContent = `Total: ${newTotal.toFixed(2)}`;
+  totalPriceElement.textContent = ` ${newTotal.toFixed(2)}`;
   showSelectedItem(quantity, itemName, priceChange, itemPrice); // Pass itemPrice as an argument
 
   // Store selected items and total amount in local storage
