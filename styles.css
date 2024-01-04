@@ -14,14 +14,14 @@ body {
     /* background-image: url('https://s3-alpha.figma.com/hub/file/2681607913/375e60a1-ef4f-48a4-839b-fb48be4f0c87-cover.png'); */
     background-image: url('images/logo-removebg.png');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
   }
   
   .tagline {
     font-family:Cambria, Cochin, Georgia, 'Times', Times New Roman, serif;
     position: absolute;
     top: 80%;
-    right: 0; /* Adjust as needed */
+    right: 15px; /* Adjust as needed */
     transform: translateY(-50%);
     text-align: right;
     color: rgb(78, 59, 50);;
