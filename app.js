@@ -93,14 +93,6 @@ const menu = [
     image: 'Bun Burg Club Sandwich.jpeg.jpg',
     items: [
       { name: 'Bun Burg Club Sandwiches', price: 180},
-      // Add more side items as needed
-      // ...
-    ],
-  },
-  {
-    category: 'Served With Fries',
-    image: 'French-fries.jpg',
-    items: [
       { name: 'Zinger Club sandwich', price: 150},
       { name: 'Mixed Club Sandwich', price: 160},
       { name: 'Egg club sandwich', price:110 },
@@ -114,14 +106,6 @@ const menu = [
     image: 'Mushroom beef burger.jpg',
     items: [
       { name: 'Felafil burger', price: 110},
-      // Add more side items as needed
-      // ...
-    ],
-  },
-  {
-    category: 'Served With Fries',
-    image: 'French-fries.jpg',
-    items: [
       { name: 'Crispy Fire Burger', price:160 },
       { name: 'Grilled Chicken Burger', price:140 },
       { name: 'Jumbo Chicken Burger', price: 160},
