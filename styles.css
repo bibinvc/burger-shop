@@ -8,12 +8,29 @@ body {
 }
 
 .cover-image {
+    position: relative;
     width: auto;
     height: 800px; /* Adjust the height as needed */
     background-image: url('https://s3-alpha.figma.com/hub/file/2681607913/375e60a1-ef4f-48a4-839b-fb48be4f0c87-cover.png');
     background-size: cover;
     background-position: center;
-}
+  }
+  
+  .tagline {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Adjust as needed */
+    transform: translateY(-50%);
+    text-align: right;
+    color: white;
+    font-size: 24px;
+    padding: 20px; /* Add padding for better visibility */
+  }
+  
+  .tagline h2 {
+    margin: 0;
+  }
+  
 
 nav {
     position: fixed;
@@ -229,8 +246,8 @@ h1 {
 }
 
 .category-image {
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -242,7 +259,7 @@ h1 {
     }
 
     .category-image {
-        width: 150px;
+        width: 100%;
     }
 }
 
@@ -416,3 +433,37 @@ footer {
     margin-top: 20px;
 }
 
+.category {
+    /* Your existing styles for category container */
+  }
+  
+  .product {
+    /* Your existing styles for product container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .item-name {
+    /* Styles for item name */
+  }
+  
+  .item-price {
+    /* Styles for item price */
+  }
+  
+  .quantity-container {
+    /* Styles for the container of quantity input and buttons */
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-input {
+    /* Styles for quantity input */
+  }
+  
+  .qbutton {
+    /* Styles for +/- buttons */
+    margin: 5px 0 0 0; /* Adjust as needed */
+  }
+  
