@@ -518,6 +518,27 @@ footer {
     /* Styles for +/- buttons */
     margin: 5px 0 0 0; /* Adjust as needed */
   }
+
+  .about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us h2 {
+    color: #333; /* Dark text color */
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    color: #666; /* Medium gray text color */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
   
   
   
