@@ -8,8 +8,9 @@ body {
 }
 
 .cover-image {
-    height: 300px;
-    background-image: url('https://s3-alpha.figma.com/hub/file/2681607913/375e60a1-ef4f-48a4-839b-fb48be4f0c87-cover.png'); /* Replace with your actual burger image URL */
+    width: auto;
+    height: 800px; /* Adjust the height as needed */
+    background-image: url('https://s3-alpha.figma.com/hub/file/2681607913/375e60a1-ef4f-48a4-839b-fb48be4f0c87-cover.png');
     background-size: cover;
     background-position: center;
 }
@@ -181,7 +182,7 @@ h1 {
 /* Media queries for responsive design */
 @media only screen and (max-width: 600px) {
     .cover-image {
-        height: 150px;
+        height: 300px;
     }
 
     nav ul li {

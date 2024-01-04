@@ -14,7 +14,7 @@ function displayCartItems() {
     for (const itemName in storedSelectedItems) {
         if (storedSelectedItems.hasOwnProperty(itemName)) {
             const item = storedSelectedItems[itemName];
-            const cartItem = `${item.quantity} ${itemName}(s) - ${item.total.toFixed(2)}`;
+            const cartItem = ` ${itemName}(s) X ${item.quantity} - ${item.total.toFixed(2)}`;
             const itemDiv = document.createElement("div");
             itemDiv.textContent = cartItem;
             cartItemsContainer.appendChild(itemDiv);

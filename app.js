@@ -23,7 +23,8 @@ const menu = [
     category: 'FRIES',
     image: 'French-fries.jpg',
     items: [
-      { name: 'French Fries Small/Medium ', price: 60/110 },
+      { name: 'French Fries Small ', price: 60},
+      {name: 'French Fries Medium ', price: 110},
       { name: 'French Fries peri peri S/M', price: 70/120 },
       {name: 'Dynamite Fries', price:130 },
       {name: 'Loaded Cheesy Fries', price:130 },
@@ -100,7 +101,7 @@ function incrementQuantity(itemName, itemPrice, quantityInput) {
   const currentQuantity = parseInt(quantityInput.value, 10);
   quantityInput.value = currentQuantity + 1;
 
-  updateTotalPrice(itemPrice, currentQuantity + 1, itemName);
+  updateTotalPrice(itemPrice, currentQuantity + 1, itemName, itemPrice); // Pass itemPrice as an argument
 }
 
 function decrementQuantity(itemName, itemPrice, quantityInput) {
@@ -108,11 +109,11 @@ function decrementQuantity(itemName, itemPrice, quantityInput) {
 
   if (currentQuantity > 0) {
     quantityInput.value = currentQuantity - 1;
-    updateTotalPrice(-itemPrice, currentQuantity - 1, itemName);
+    updateTotalPrice(-itemPrice, currentQuantity - 1, itemName, itemPrice); // Pass itemPrice as an argument
   }
 }
 
-function updateTotalPrice(priceChange, quantity, itemName) {
+function updateTotalPrice(priceChange, quantity, itemName, itemPrice) {
   const totalPriceElement = document.getElementById('totalPrice');
   let currentTotal = parseFloat(totalPriceElement.textContent.replace(/[^\d.]/g, ''));
 
@@ -120,22 +121,21 @@ function updateTotalPrice(priceChange, quantity, itemName) {
   const newTotal = currentTotal + priceChange;
 
   totalPriceElement.textContent = `Total: ${newTotal.toFixed(2)}`;
-  showSelectedItem(quantity, itemName, priceChange);
+  showSelectedItem(quantity, itemName, priceChange, itemPrice); // Pass itemPrice as an argument
 
   // Store selected items and total amount in local storage
   localStorage.setItem("selectedItems", JSON.stringify(selectedItems));
   localStorage.setItem("totalAmount", newTotal.toFixed(2));
 }
-
-function showSelectedItem(quantity, itemName, priceChange) {
+function showSelectedItem(quantity, itemName, priceChange, itemPrice) {
   const selectedItemsElement = document.getElementById('selectedItems');
-  const itemTotal = (quantity * priceChange).toFixed(2);
+  const itemTotal = (quantity * itemPrice).toFixed(2);
 
   // Check if the item is already selected
   if (selectedItems[itemName]) {
     // If it is, update the quantity and total price
-    selectedItems[itemName].quantity += quantity;
-    selectedItems[itemName].total += parseFloat(itemTotal);
+    selectedItems[itemName].quantity = quantity;
+    selectedItems[itemName].total = parseFloat(itemTotal);
   } else {
     // If it's not, add a new entry
     selectedItems[itemName] = {
@@ -143,10 +143,12 @@ function showSelectedItem(quantity, itemName, priceChange) {
       total: parseFloat(itemTotal),
     };
   }
+  console.log(selectedItems[itemName])
 
   // Update the display
-  updateSelectedItemsDisplay();
+  updateSelectedItemsDisplay(itemName, quantity, selectedItems[itemName].total); // Pass itemName, current quantity, and updated total as arguments
 }
+
 
 function updateSelectedItemsDisplay() {
   // Clear existing content
@@ -157,7 +159,7 @@ function updateSelectedItemsDisplay() {
   for (const itemName in selectedItems) {
     if (selectedItems.hasOwnProperty(itemName)) {
       const item = selectedItems[itemName];
-      const selectedItem = `${item.quantity} ${itemName}(s) - ${item.total.toFixed(2)}`;
+      const selectedItem = ` ${itemName}(s) X ${item.quantity} - ${item.total.toFixed(2)}`;
       const itemDiv = document.createElement('div');
       itemDiv.textContent = selectedItem;
       selectedItemsElement.appendChild(itemDiv);
