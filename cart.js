@@ -45,7 +45,7 @@ function sendToWhatsapp() {
     
     // Convert the object to a formatted string
     const selectedItemsString = Object.entries(storedSelectedItems)
-        .map(([itemName, item]) => ` ${itemName}(s) X ${item.quantity} - ${item.total.toFixed(2)}`)
+        .map(([itemName, item]) => ` ${itemName} X ${item.quantity} - ${item.total.toFixed(2)}`)
         .join("%0a");
 
 
