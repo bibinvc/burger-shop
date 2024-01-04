@@ -118,20 +118,20 @@ const menu = [
       // ...
     ],
   },
-  {
-    category: 'ADDONS',
-    image: 'French-fries.jpg',
-    items: [
-      { name: 'Cheese Slice', price: 12},
-      { name: 'Special Sauce', price:15 },
-      { name: 'Mayonnaise', price: 15},
-      // Add more side items as needed
-      // ...
-    ],
-  },
+  // {
+  //   category: 'ADDONS',
+  //   image: 'French-fries.jpg',
+  //   items: [
+  //     { name: 'Cheese Slice', price: 12},
+  //     { name: 'Special Sauce', price:15 },
+  //     { name: 'Mayonnaise', price: 15},
+  //     // Add more side items as needed
+  //     // ...
+  //   ],
+  // },
   {
     category: 'MEALS COMBO',
-    image: 'French-fries.jpg',
+    image: 'Fchicken burger combo.jpg',
     items: [
       { name: 'Chicken Burger ,Fries and Softdrinks', price: 120},
       { name: 'Beef Burger fries With Softdrinks', price: 120},
@@ -143,7 +143,7 @@ const menu = [
   },
   {
     category: 'SLIDERS',
-    image: 'French-fries.jpg',
+    // image: 'French-fries.jpg',
     items: [
       { name: 'Chicken Sliders', price:190 },
       // Add more side items as needed
@@ -152,7 +152,7 @@ const menu = [
   },
   {
     category: '3 Burger',
-    image: 'French-fries.jpg',
+    // image: 'French-fries.jpg',
     items: [
       { name: 'Beef Sliders', price: 210},
       { name: 'Mix SLiders', price:210 },
@@ -162,7 +162,7 @@ const menu = [
   },
   {
     category: 'PIZZA',
-    image: 'French-fries.jpg',
+    image: 'pizza.jpg',
     items: [
       { name: 'Mini Pizza', price:0 },
       { name: 'Fusion Chicken Pizza', price:0 },
