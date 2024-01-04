@@ -89,7 +89,7 @@ const menu = [
     ],
   },
   {
-    category: 'CLUB SANDWICHES',
+    category: 'CLUB SANDWICHES Served With Fries',
     image: 'Bun Burg Club Sandwich.jpeg.jpg',
     items: [
       { name: 'Bun Burg Club Sandwiches', price: 180},
@@ -102,7 +102,7 @@ const menu = [
     ],
   },
   {
-    category: 'BUN BURG TREATS',
+    category: 'BUN BURG TREATS Served With Fries',
     image: 'Mushroom beef burger.jpg',
     items: [
       { name: 'Felafil burger', price: 110},
@@ -118,20 +118,20 @@ const menu = [
       // ...
     ],
   },
-  // {
-  //   category: 'ADDONS',
-  //   image: 'French-fries.jpg',
-  //   items: [
-  //     { name: 'Cheese Slice', price: 12},
-  //     { name: 'Special Sauce', price:15 },
-  //     { name: 'Mayonnaise', price: 15},
-  //     // Add more side items as needed
-  //     // ...
-  //   ],
-  // },
+  {
+    category: 'ADDONS',
+    image: 'addons.jpg',
+    items: [
+      { name: 'Cheese Slice', price: 12},
+      { name: 'Special Sauce', price:15 },
+      { name: 'Mayonnaise', price: 15},
+      // Add more side items as needed
+      // ...
+    ],
+  },
   {
     category: 'MEALS COMBO',
-    image: 'Fchicken burger combo.jpg',
+    image: 'chicken burger combo.jpg',
     items: [
       { name: 'Chicken Burger ,Fries and Softdrinks', price: 120},
       { name: 'Beef Burger fries With Softdrinks', price: 120},
@@ -142,18 +142,10 @@ const menu = [
     ],
   },
   {
-    category: 'SLIDERS',
-    // image: 'French-fries.jpg',
+    category: 'SLIDERS 3 Burger',
+    image: 'sliders.jpg',
     items: [
       { name: 'Chicken Sliders', price:190 },
-      // Add more side items as needed
-      // ...
-    ],
-  },
-  {
-    category: '3 Burger',
-    // image: 'French-fries.jpg',
-    items: [
       { name: 'Beef Sliders', price: 210},
       { name: 'Mix SLiders', price:210 },
       // Add more side items as needed
