@@ -24,7 +24,7 @@ body {
     right: 15px; /* Adjust as needed */
     transform: translateY(-50%);
     text-align: right;
-    color: rgb(78, 59, 50);;
+    color: rgb(78, 59, 50);
     font-size: 20px;
     padding: 20px; /* Add padding for better visibility */
   }
@@ -161,7 +161,7 @@ h1 {
 
 .order-now-button {
     background-color: #f5e6dc;
-    color: rgb(78, 59, 50);;
+    color: rgb(78, 59, 50);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

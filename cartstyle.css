@@ -2,8 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8d01c;
-    color: white;
+    background-color: #f3f2f2;
+    color: rgb(78, 59, 50);;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 
@@ -17,7 +17,7 @@ h1 {
 #cartItems {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #f8d01c;
+    background-color: #f3f2f2;
     /* border-radius: 8px; */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -34,7 +34,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
-    background-color: #f8d01c;
+    background-color: #f3f2f2;
 
 
     
@@ -44,8 +44,8 @@ h1 {
 #totalAmount {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #f8d01c;
-    border-radius: 8px;
+    background-color: #f3f2f2;
+    border-radius: none;
     padding: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-align: center;
@@ -54,7 +54,7 @@ h1 {
 #userDetails {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #f8d01c;
+    background-color: #f3f2f2;
     padding: 20px;
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
     
@@ -81,8 +81,8 @@ input {
 }
 
 button {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #f5e6dc;
+  color: rgb(78, 59, 50);
   padding: 10px 20px;
   border: none;
   border-radius: none;
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-  background-color: #045049;
+  background-color: rgb(105, 105, 105);
 }
 
 button.back-button {
