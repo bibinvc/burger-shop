@@ -34,6 +34,161 @@ const menu = [
       // ...
     ],
   },
+  {
+    category: 'Healthy Salads',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Ceasar Salad Veg', price: 120},
+      { name: 'Ceasar Salad Chicken', price:150 },
+      { name: 'Greek Salad', price: 90},
+      { name: 'Hummus With Kubus', price: 120},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'Normal Burger',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Chicken Burger', price: 90},
+      { name: 'Chicken Cheese burger', price: 100},
+      { name: 'Chicken Double Burger', price: 120},
+      { name: 'Zinger Burger', price:140 },
+      { name: 'Chicken Nuggets burger', price: 140},
+      { name: 'BeefBurger', price: 90},
+      { name: 'Beef Cheese Burger', price: 100},
+      { name: 'Beef Double Burger', price: 120},
+      { name: 'VEG BURGER', price: 90},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'LOAF SANDWICH',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Chicken Sandwich', price: 90},
+      { name: 'Chicken steak Sandwich', price: 140},
+      { name: 'Hot dog Sandwich', price: 130},
+      { name: 'Chicken tikka sandwich ', price: 140},
+      { name: 'Egg Sandwich', price: 40},
+      { name: 'Veg Sandwich', price: 40},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'WRAP ROLLS',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Chicken tawa roll', price:110 },
+      { name: 'Spicy Chicken wraps ', price:120 },
+      { name: 'Felafil Wrap', price: 100},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'CLUB SANDWICHES',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Bun Burg Club Sandwiches', price: 180},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'Served With Fries',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Zinger Club sandwich', price: 150},
+      { name: 'Mixed Club Sandwich', price: 160},
+      { name: 'Egg club sandwich', price:110 },
+      { name: 'Veg Club sandwich', price: 110},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'BUN BURG TREATS',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Felafil burger', price: 110},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'Served With Fries',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Crispy Fire Burger', price:160 },
+      { name: 'Grilled Chicken Burger', price:140 },
+      { name: 'Jumbo Chicken Burger', price: 160},
+      { name: 'Chicken Breast Burger', price: 150},
+      { name: 'Dynamite Chicken Burger', price: 150},
+      { name: 'Persian Delights', price:160 },
+      { name: 'Mushroom Beef Burger', price: 180},
+      { name: 'Double Bull Burger', price:200 },
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'ADDONS',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Cheese Slice', price: 12},
+      { name: 'Special Sauce', price:15 },
+      { name: 'Mayonnaise', price: 15},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'MEALS COMBO',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Chicken Burger ,Fries and Softdrinks', price: 120},
+      { name: 'Beef Burger fries With Softdrinks', price: 120},
+      { name: 'Crispy Wrap Combo', price: 140},
+      { name: 'Kids Meals with fries and juice', price:120 },
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'SLIDERS',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Chicken Sliders', price:190 },
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: '3 Burger',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Beef Sliders', price: 210},
+      { name: 'Mix SLiders', price:210 },
+      // Add more side items as needed
+      // ...
+    ],
+  },
+  {
+    category: 'PIZZA',
+    image: 'French-fries.jpg',
+    items: [
+      { name: 'Mini Pizza', price:0 },
+      { name: 'Fusion Chicken Pizza', price:0 },
+      { name: 'B b q Chicken Pizza', price: 0},
+      // Add more side items as needed
+      // ...
+    ],
+  },
+
+  
   // Add more categories with their respective items
   // ...
 ];

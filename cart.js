@@ -55,7 +55,7 @@ function sendToWhatsapp() {
 	+ "Contact : " +contact+ "%0a"
     + "Comment : " +comment+ "%0a"
 	+ "SelectedItems : " +selectedItemsString+ "%0a"
-	+ "TotalAmxount : " +storedTotalAmount+ "%0a"
+	+ "TotalAmount : " +storedTotalAmount+ "%0a"
 
 	window.open(url, '_blank').focus();
 }
